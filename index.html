@@ -1,29 +1,312 @@
-<!DOCTYPE html><html lang="pt-BR"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Links de Ferramentas - Estilo Retrô</title> <script src="https://cdn.tailwindcss.com"></script> <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet"> <script> tailwind.config = { theme: { extend: { colors: { retro: { purple: '#800080', blue: '#0000CD', cyan: '#00FFFF', yellow: '#FFFF00', green: '#32CD32', orange: '#FF8C00', red: '#DC143C', teal: '#008080', indigo: '#4B0082', lime: '#90EE90', hotpink: '#FF69B4', black: '#1A1A1A', bg: '#0B0C10', }, }, fontFamily: { retro: ['"Press Start 2P"', 'monospace'], oldschool: ['Verdana', 'Geneva', 'sans-serif'], }, boxShadow: { 'retro': '4px 4px 0px #000000', 'retro-hover': '6px 6px 0px #000000', } } } } </script> <style type="text/tailwindcss"> @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); @layer utilities { .text-shadow-retro { text-shadow: 2px 2px 0px #000000; } .border-retro { border: 3px outset #000000; } .animate-glow { animation: glow 2s ease-in-out infinite alternate; } .animate-marquee { animation: marquee 15s linear infinite; } .hover-bounce { transition: all 0.2s ease; } .grid-auto-fit { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); } @keyframes glow { from { filter: drop-shadow(0 0 2px #00FFFF); text-shadow: 0 0 2px #00FFFF; } to { filter: drop-shadow(0 0 8px #FF1493); text-shadow: 0 0 8px #FF1493; } } @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } } .bg-pattern { background-color: #0B0C10; background-image: linear-gradient(45deg, #1a1a1a 25%, transparent 25%), linear-gradient(-45deg, #1a1a1a 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #1a1a1a 75%), linear-gradient(-45deg, transparent 75%, #1a1a1a 75%); background-size: 20px 20px; background-position: 0 0, 0 10px, 10px -10px, -10px 0px; } } </style></head><body class="bg-pattern min-h-screen text-white font-oldschool"> <div class="container mx-auto px-4 py-8 max-w-7xl"> <!-- Cabeçalho Principal --> <header class="text-center mb-12"> <h1 class="text-[clamp(2rem,5vw,4rem)] font-retro font-bold text-retro-cyan mb-4 text-shadow-retro animate-glow"> 🚀 MEUS LINKS DE FERRAMENTAS </h1> <div class="bg-retro-red border-retro border-black p-3 mb-6 overflow-hidden whitespace-nowrap"> <p class="animate-marquee inline-block text-white font-bold text-lg"> ⭐ Bem-vindo à minha página de links! Clique e acesse todas as ferramentas ⭐ </p> </div> <p class="text-retro-yellow text-[clamp(1rem,2vw,1.2rem)] max-w-3xl mx-auto font-bold"> Página no estilo dos anos 90/2000 — com animações, cores vibrantes e muita personalidade! ✨ </p> </header>
-<!-- Contador de Visitas - Estilo Antigo --> <div class="text-center mb-10"> <div class="inline-block bg-black border-retro border-retro-cyan px-6 py-2"> <span class="text-retro-green font-retro text-sm">👀 Contador: <span id="visitorCount">99999</span> Visitas</span> </div> </div>
-<!-- Grade de Botões --> <main class="grid grid-auto-fit gap-5"> <!-- Botão 1 --> <a href="https://www.dola.com/chat/" target="_blank" rel="noopener noreferrer" class="bg-retro-blue border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-comments text-3xl mb-2 text-retro-yellow"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Dola Chat</h3> </a>
-<!-- Botão 2 --> <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" class="bg-retro-green border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-robot text-3xl mb-2 text-retro-purple"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">ChatGPT</h3> </a>
-<!-- Botão 3 --> <a href="https://labs.google/fx/tools/flow" target="_blank" rel="noopener noreferrer" class="bg-retro-orange border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-google text-3xl mb-2 text-retro-cyan"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-blue">Google Labs Flow</h3> </a>
-<!-- Botão 4 --> <a href="https://arena.ai/" target="_blank" rel="noopener noreferrer" class="bg-retro-purple border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-trophy text-3xl mb-2 text-retro-yellow"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-green">Arena AI</h3> </a>
-<!-- Botão 5 --> <a href="https://www.miricanvas.com/pt/miricle/ai-video-generator" target="_blank" rel="noopener noreferrer" class="bg-retro-teal border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-video-camera text-3xl mb-2 text-retro-lime"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Miricle AI Vídeo</h3> </a>
-<!-- Botão 6 --> <a href="https://www.kodular.io/" target="_blank" rel="noopener noreferrer" class="bg-retro-indigo border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-mobile-phone text-3xl mb-2 text-retro-lime"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Kodular</h3> </a>
-<!-- Botão 7 --> <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-black border-retro border-retro-cyan p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-github text-3xl mb-2 text-retro-cyan"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-green">GitHub</h3> </a>
-<!-- Botão 8 --> <a href="https://admob.google.com/home/" target="_blank" rel="noopener noreferrer" class="bg-retro-blue border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-usd text-3xl mb-2 text-retro-yellow"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">AdMob Google</h3> </a>
-<!-- Botão 9 --> <a href="https://chat.qwen.ai/" target="_blank" rel="noopener noreferrer" class="bg-retro-purple border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-commenting text-3xl mb-2 text-retro-cyan"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Qwen AI</h3> </a>
-<!-- Botão 10 --> <a href="https://vheer.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-green border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-picture-o text-3xl mb-2 text-retro-purple"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-blue">Vheer AI</h3> </a>
-<!-- Botão 11 --> <a href="https://pollinations.ai/" target="_blank" rel="noopener noreferrer" class="bg-retro-orange border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-random text-3xl mb-2 text-retro-purple"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Pollinations AI</h3> </a>
-<!-- Botão 12 --> <a href="https://huggingface.co/spaces" target="_blank" rel="noopener noreferrer" class="bg-retro-teal border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-smile-o text-3xl mb-2 text-retro-yellow"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-red">Hugging Face</h3> </a>
-<!-- Botão 13 --> <a href="https://www.javadecompilers.com/apk" target="_blank" rel="noopener noreferrer" class="bg-retro-indigo border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-code text-3xl mb-2 text-retro-lime"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Java Decompilers</h3> </a>
-<!-- Botão 14 --> <a href="https://pwa2apk.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-blue border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-android text-3xl mb-2 text-retro-yellow"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-green">PWA 2 APK</h3> </a>
-<!-- Botão 15 --> <a href="https://app.netlify.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-purple border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-cloud text-3xl mb-2 text-retro-cyan"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Netlify</h3> </a>
-<!-- Botão 16 --> <a href="https://supabase.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-green border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-database text-3xl mb-2 text-retro-purple"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-blue">Supabase</h3> </a>
-<!-- Botão 17 --> <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-black border-retro border-retro-cyan p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-line-chart text-3xl mb-2 text-retro-cyan"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-green">Vercel</h3> </a>
-<!-- Botão 18 --> <a href="https://imgur.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-orange border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-image text-3xl mb-2 text-retro-yellow"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-blue">Imgur</h3> </a>
-<!-- Botão 19 --> <a href="https://dash.cloudflare.com" target="_blank" rel="noopener noreferrer" class="bg-retro-teal border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-shield text-3xl mb-2 text-retro-lime"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Cloudflare</h3> </a>
-<!-- Botão 20 --> <a href="https://kryven.cc/chat" target="_blank" rel="noopener noreferrer" class="bg-retro-indigo border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-comment-o text-3xl mb-2 text-retro-cyan"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-lime">Kryven Chat</h3> </a>
-<!-- Botão 21 --> <a href="https://www.remove.bg/upload" target="_blank" rel="noopener noreferrer" class="bg-retro-red border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-eraser text-3xl mb-2 text-retro-yellow"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Remove BG</h3> </a>
-<!-- Botão 22 --> <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-blue border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-paint-brush text-3xl mb-2 text-retro-cyan"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Canva</h3> </a>
-<!-- Botão 23 --> <a href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer" class="bg-retro-purple border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-music text-3xl mb-2 text-retro-cyan"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">ElevenLabs</h3> </a>
-<!-- Botão 24 --> <a href="https://runwayml.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-green border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-film text-3xl mb-2 text-retro-purple"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-red">Runway ML</h3> </a>
-<!-- Botão 25 - NOVO: Text to Speech --> <a href="https://veoaifree.com/free-ai-text-to-speech/" target="_blank" rel="noopener noreferrer" class="bg-retro-hotpink border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group"> <i class="fa fa-microphone text-3xl mb-2 text-retro-yellow"></i> <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">VEOAI Free TTS</h3> </a> </main>
-<!-- Rodapé Estilo 2000 --> <footer class="mt-12 text-center border-t-4 border-retro-cyan pt-6"> <div class="flex flex-wrap justify-center gap-4 text-retro-yellow text-sm"> <span>🏆 Melhores Ferramentas</span> <span>⚡ Atualizado 2026</span> <span>🔒 Links Seguros</span> <span>🚀 Acesso Rápido</span> </div> <p class="text-retro-green text-xs mt-4"> © 2026 - Página de Links ao Estilo Clássico da Internet </p> <div class="mt-4 flex justify-center gap-3"> <i class="fa fa-html5 text-retro-orange text-2xl"></i> <i class="fa fa-css3 text-retro-blue text-2xl"></i> <i class="fa fa-jsfiddle text-retro-yellow text-2xl"></i> </div> </footer> </div>
-<script> // Contador de visitas funcional com localStorage (function() { let count = localStorage.getItem('visitorCountRetro'); if (count === null) { count = 82347; } else { count = parseInt(count) + 1; } localStorage.setItem('visitorCountRetro', count); document.getElementById('visitorCount').textContent = count.toString().padStart(5, '0'); })(); </script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Meus Links de Ferramentas - Estilo Retrô 90s</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        retro: {
+                            purple: '#800080',
+                            blue: '#0000CD',
+                            cyan: '#00FFFF',
+                            yellow: '#FFFF00',
+                            green: '#32CD32',
+                            orange: '#FF8C00',
+                            red: '#DC143C',
+                            teal: '#008080',
+                            indigo: '#4B0082',
+                            lime: '#90EE90',
+                            hotpink: '#FF69B4',
+                            black: '#1A1A1A',
+                            bg: '#0B0C10',
+                        },
+                    },
+                    fontFamily: {
+                        retro: ['"Press Start 2P"', 'monospace'],
+                        oldschool: ['Verdana', 'Geneva', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'retro': '4px 4px 0px #000000',
+                        'retro-hover': '6px 6px 0px #000000',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        @layer utilities {
+            .text-shadow-retro { text-shadow: 2px 2px 0px #000000; }
+            .border-retro { border: 3px outset #000000; }
+            .animate-glow { animation: glow 2s ease-in-out infinite alternate; }
+            .animate-marquee { animation: marquee 15s linear infinite; }
+            .grid-auto-fit { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+            @keyframes glow {
+                from { filter: drop-shadow(0 0 2px #00FFFF); text-shadow: 0 0 2px #00FFFF; }
+                to { filter: drop-shadow(0 0 8px #FF1493); text-shadow: 0 0 8px #FF1493; }
+            }
+            @keyframes marquee {
+                0% { transform: translateX(100%); }
+                100% { transform: translateX(-100%); }
+            }
+            .bg-pattern {
+                background-color: #0B0C10;
+                background-image: linear-gradient(45deg, #1a1a1a 25%, transparent 25%),
+                                  linear-gradient(-45deg, #1a1a1a 25%, transparent 25%),
+                                  linear-gradient(45deg, transparent 75%, #1a1a1a 75%),
+                                  linear-gradient(-45deg, transparent 75%, #1a1a1a 75%);
+                background-size: 20px 20px;
+                background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-pattern min-h-screen text-white font-oldschool">
+
+<div class="container mx-auto px-4 py-8 max-w-7xl">
+    <!-- Cabeçalho Principal -->
+    <header class="text-center mb-12">
+        <h1 class="text-[clamp(2rem,5vw,4rem)] font-retro font-bold text-retro-cyan mb-4 text-shadow-retro animate-glow">
+            🚀 MEUS LINKS DE FERRAMENTAS
+        </h1>
+        <div class="bg-retro-red border-retro border-black p-3 mb-6 overflow-hidden whitespace-nowrap">
+            <p class="animate-marquee inline-block text-white font-bold text-lg">
+                ⭐ Bem-vindo à minha página de links! Clique e acesse todas as ferramentas ⭐
+            </p>
+        </div>
+        <p class="text-retro-yellow text-[clamp(1rem,2vw,1.2rem)] max-w-3xl mx-auto font-bold">
+            Página no estilo dos anos 90/2000 — com animações, cores vibrantes e muita personalidade! ✨
+        </p>
+    </header>
+
+    <!-- Contador de Visitas - Estilo Antigo -->
+    <div class="text-center mb-10">
+        <div class="inline-block bg-black border-retro border-retro-cyan px-6 py-2">
+            <span class="text-retro-green font-retro text-sm">👀 Contador: <span id="visitorCount">99999</span> Visitas</span>
+        </div>
+    </div>
+
+    <!-- Grade de Botões (TODOS OS LINKS ORIGINAIS + NOVOS ADICIONADOS UM ABAIXO DO OUTRO NA ORDEM SOLICITADA) -->
+    <main class="grid grid-auto-fit gap-5">
+        <!-- 1. Dola Chat -->
+        <a href="https://www.dola.com/chat/" target="_blank" rel="noopener noreferrer" class="bg-retro-blue border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-comments text-3xl mb-2 text-retro-yellow"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Dola Chat</h3>
+        </a>
+        <!-- 2. ChatGPT -->
+        <a href="https://chatgpt.com" target="_blank" rel="noopener noreferrer" class="bg-retro-green border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-robot text-3xl mb-2 text-retro-purple"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">ChatGPT</h3>
+        </a>
+        <!-- 3. Google Labs Flow -->
+        <a href="https://labs.google/fx/tools/flow" target="_blank" rel="noopener noreferrer" class="bg-retro-orange border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-google text-3xl mb-2 text-retro-cyan"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-blue">Google Labs Flow</h3>
+        </a>
+        <!-- 4. Arena AI -->
+        <a href="https://arena.ai/" target="_blank" rel="noopener noreferrer" class="bg-retro-purple border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-trophy text-3xl mb-2 text-retro-yellow"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-green">Arena AI</h3>
+        </a>
+        <!-- 5. Miricle AI Vídeo -->
+        <a href="https://www.miricanvas.com/pt/miricle/ai-video-generator" target="_blank" rel="noopener noreferrer" class="bg-retro-teal border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-video-camera text-3xl mb-2 text-retro-lime"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Miricle AI Vídeo</h3>
+        </a>
+        <!-- 6. Kodular -->
+        <a href="https://www.kodular.io/" target="_blank" rel="noopener noreferrer" class="bg-retro-indigo border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-mobile-phone text-3xl mb-2 text-retro-lime"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Kodular</h3>
+        </a>
+        <!-- 7. GitHub -->
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-black border-retro border-retro-cyan p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-github text-3xl mb-2 text-retro-cyan"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-green">GitHub</h3>
+        </a>
+        <!-- 8. AdMob Google -->
+        <a href="https://admob.google.com/home/" target="_blank" rel="noopener noreferrer" class="bg-retro-blue border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-usd text-3xl mb-2 text-retro-yellow"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">AdMob Google</h3>
+        </a>
+        <!-- 9. Qwen AI -->
+        <a href="https://chat.qwen.ai/" target="_blank" rel="noopener noreferrer" class="bg-retro-purple border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-commenting text-3xl mb-2 text-retro-cyan"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Qwen AI</h3>
+        </a>
+        <!-- 10. Vheer AI -->
+        <a href="https://vheer.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-green border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-picture-o text-3xl mb-2 text-retro-purple"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-blue">Vheer AI</h3>
+        </a>
+        <!-- 11. Pollinations AI -->
+        <a href="https://pollinations.ai/" target="_blank" rel="noopener noreferrer" class="bg-retro-orange border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-random text-3xl mb-2 text-retro-purple"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Pollinations AI</h3>
+        </a>
+        <!-- 12. Hugging Face -->
+        <a href="https://huggingface.co/spaces" target="_blank" rel="noopener noreferrer" class="bg-retro-teal border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-smile-o text-3xl mb-2 text-retro-yellow"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-red">Hugging Face</h3>
+        </a>
+        <!-- 13. Java Decompilers -->
+        <a href="https://www.javadecompilers.com/apk" target="_blank" rel="noopener noreferrer" class="bg-retro-indigo border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-code text-3xl mb-2 text-retro-lime"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Java Decompilers</h3>
+        </a>
+        <!-- 14. PWA 2 APK -->
+        <a href="https://pwa2apk.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-blue border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-android text-3xl mb-2 text-retro-yellow"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-green">PWA 2 APK</h3>
+        </a>
+        <!-- 15. Netlify -->
+        <a href="https://app.netlify.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-purple border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-cloud text-3xl mb-2 text-retro-cyan"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Netlify</h3>
+        </a>
+        <!-- 16. Supabase -->
+        <a href="https://supabase.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-green border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-database text-3xl mb-2 text-retro-purple"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-blue">Supabase</h3>
+        </a>
+        <!-- 17. Vercel -->
+        <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-black border-retro border-retro-cyan p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-line-chart text-3xl mb-2 text-retro-cyan"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-green">Vercel</h3>
+        </a>
+        <!-- 18. Imgur -->
+        <a href="https://imgur.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-orange border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-image text-3xl mb-2 text-retro-yellow"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-blue">Imgur</h3>
+        </a>
+        <!-- 19. Cloudflare -->
+        <a href="https://dash.cloudflare.com" target="_blank" rel="noopener noreferrer" class="bg-retro-teal border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-shield text-3xl mb-2 text-retro-lime"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Cloudflare</h3>
+        </a>
+        <!-- 20. Kryven Chat -->
+        <a href="https://kryven.cc/chat" target="_blank" rel="noopener noreferrer" class="bg-retro-indigo border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-comment-o text-3xl mb-2 text-retro-cyan"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-lime">Kryven Chat</h3>
+        </a>
+        <!-- 21. Remove BG -->
+        <a href="https://www.remove.bg/upload" target="_blank" rel="noopener noreferrer" class="bg-retro-red border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-eraser text-3xl mb-2 text-retro-yellow"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Remove BG</h3>
+        </a>
+        <!-- 22. Canva -->
+        <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-blue border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-paint-brush text-3xl mb-2 text-retro-cyan"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Canva</h3>
+        </a>
+        <!-- 23. ElevenLabs -->
+        <a href="https://elevenlabs.io/" target="_blank" rel="noopener noreferrer" class="bg-retro-purple border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-music text-3xl mb-2 text-retro-cyan"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">ElevenLabs</h3>
+        </a>
+        <!-- 24. Runway ML -->
+        <a href="https://runwayml.com/" target="_blank" rel="noopener noreferrer" class="bg-retro-green border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-film text-3xl mb-2 text-retro-purple"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-red">Runway ML</h3>
+        </a>
+        <!-- 25. VEOAI Free TTS -->
+        <a href="https://veoaifree.com/free-ai-text-to-speech/" target="_blank" rel="noopener noreferrer" class="bg-retro-hotpink border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-microphone text-3xl mb-2 text-retro-yellow"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">VEOAI Free TTS</h3>
+        </a>
+
+        <!-- ================= NOVOS LINKS SOLICITADOS (UM ABAIXO DO OUTRO NA GRADE) ================= -->
+        <!-- 26. Welib.org -->
+        <a href="https://welib.org" target="_blank" rel="noopener noreferrer" class="bg-retro-teal border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-book text-3xl mb-2 text-retro-yellow"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Welib.org</h3>
+        </a>
+        <!-- 27. Mindluster.com -->
+        <a href="https://mindluster.com" target="_blank" rel="noopener noreferrer" class="bg-retro-indigo border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-graduation-cap text-3xl mb-2 text-retro-lime"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Mindluster</h3>
+        </a>
+        <!-- 28. Freetoolr.com -->
+        <a href="https://freetoolr.com" target="_blank" rel="noopener noreferrer" class="bg-retro-orange border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-wrench text-3xl mb-2 text-retro-blue"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-green">Freetoolr.com</h3>
+        </a>
+        <!-- 29. Archive.org -->
+        <a href="https://archive.org/" target="_blank" rel="noopener noreferrer" class="bg-retro-purple border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-archive text-3xl mb-2 text-retro-cyan"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Archive.org</h3>
+        </a>
+        <!-- 30. Messenger.abeto.co -->
+        <a href="https://messenger.abeto.co" target="_blank" rel="noopener noreferrer" class="bg-retro-hotpink border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-wechat text-3xl mb-2 text-retro-yellow"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Messenger Abeto</h3>
+        </a>
+        <!-- 31. Wokwi.com -->
+        <a href="https://wokwi.com" target="_blank" rel="noopener noreferrer" class="bg-retro-blue border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-microchip text-3xl mb-2 text-retro-lime"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">Wokwi Simulator</h3>
+        </a>
+        <!-- 32. Tinkercad Login -->
+        <a href="https://www.tinkercad.com/login" target="_blank" rel="noopener noreferrer" class="bg-retro-green border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-cube text-3xl mb-2 text-retro-purple"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Tinkercad</h3>
+        </a>
+        <!-- 33. Tools.pdf24.org -->
+        <a href="https://tools.pdf24.org" target="_blank" rel="noopener noreferrer" class="bg-retro-red border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-file-pdf-o text-3xl mb-2 text-retro-cyan"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">PDF24 Tools</h3>
+        </a>
+        <!-- 34. Aspose 3D BIN to PDF -->
+        <a href="https://products.aspose.app/3d/pt/conversion/bin-to-pdf" target="_blank" rel="noopener noreferrer" class="bg-retro-black border-retro border-retro-cyan p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-file-3d text-3xl mb-2 text-retro-cyan"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-green">Aspose BIN to PDF</h3>
+        </a>
+        <!-- 35. Youmind GPT Image Prompts -->
+        <a href="https://youmind.com/pt-BR/gpt-image-2-prompts" target="_blank" rel="noopener noreferrer" class="bg-retro-indigo border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-magic text-3xl mb-2 text-retro-lime"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-yellow">Youmind GPT Prompts</h3>
+        </a>
+        <!-- 36. FaceCheck ID -->
+        <a href="https://facecheck.id/pt" target="_blank" rel="noopener noreferrer" class="bg-retro-teal border-retro border-black p-4 rounded-none shadow-retro hover:shadow-retro-hover hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-200 text-center group">
+            <i class="fa fa-id-card text-3xl mb-2 text-retro-hotpink"></i>
+            <h3 class="font-bold text-lg text-white group-hover:text-retro-cyan">FaceCheck ID</h3>
+        </a>
+    </main>
+
+    <!-- Rodapé Estilo 2000 -->
+    <footer class="mt-12 text-center border-t-4 border-retro-cyan pt-6">
+        <div class="flex flex-wrap justify-center gap-4 text-retro-yellow text-sm">
+            <span>🏆 Melhores Ferramentas</span>
+            <span>⚡ Atualizado 2026</span>
+            <span>🔒 Links Seguros</span>
+            <span>🚀 Acesso Rápido</span>
+        </div>
+        <p class="text-retro-green text-xs mt-4"> © 2026 - Página de Links ao Estilo Clássico da Internet </p>
+        <div class="mt-4 flex justify-center gap-3">
+            <i class="fa fa-html5 text-retro-orange text-2xl"></i>
+            <i class="fa fa-css3 text-retro-blue text-2xl"></i>
+            <i class="fa fa-jsfiddle text-retro-yellow text-2xl"></i>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // Contador de visitas funcional com localStorage (estilo retrô)
+    (function() {
+        let count = localStorage.getItem('visitorCountRetro');
+        if (count === null) {
+            count = 82347;
+        } else {
+            count = parseInt(count) + 1;
+        }
+        localStorage.setItem('visitorCountRetro', count);
+        document.getElementById('visitorCount').textContent = count.toString().padStart(5, '0');
+    })();
+</script>
+</body>
+</html>
